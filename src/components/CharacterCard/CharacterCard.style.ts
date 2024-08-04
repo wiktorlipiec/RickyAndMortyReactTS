@@ -9,7 +9,7 @@ export const Card = styled(Link)`
   text-decoration: none;
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  color: grey;
+  color: ${({ theme }) => theme.colors.text};
   text-align: center;
   transition: 0.4s;
 
@@ -24,11 +24,11 @@ export const Avatar = styled.img`
 `;
 
 export const Name = styled.h2`
-  font-size: 1.5rem;
+  font-size: ${({ theme }) => theme.fontSizes.large};
   margin: 5px 0;
 `;
 
 export const Status = styled.p`
-  font-size: 1rem;
+  font-size: ${({ theme }) => theme.fontSizes.medium};
   margin: 5px 0;
 `;

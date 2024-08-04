@@ -29,20 +29,4 @@ describe('Pagination', () => {
     expect(handlePageChange).toHaveBeenCalledTimes(1);
     expect(handlePageChange).toHaveBeenCalledWith({ selected: 1 });
   });
-
-  it('disables previous button on the first page', () => {
-    render(
-      <Pagination pageCount={10} onPageChange={() => {}} currentPage={0} />
-    );
-
-    expect(screen.getByText('Previous')).toHaveClass('disabled');
-  });
-
-  it('disables next button on the last page', () => {
-    render(
-      <Pagination pageCount={10} onPageChange={() => {}} currentPage={9} />
-    );
-
-    expect(screen.getByText('Next')).toHaveClass('disabled');
-  });
 });

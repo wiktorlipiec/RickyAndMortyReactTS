@@ -11,3 +11,16 @@ export const Avatar = styled.img`
   height: 200px;
   border-radius: 50%;
 `;
+
+export const Heading1 = styled.h1`
+  font-size: ${({ theme }) => theme.fontSizes.extraLarge};
+`;
+
+export const Heading2 = styled.h2`
+  font-size: ${({ theme }) => theme.fontSizes.large};
+`;
+
+export const Text = styled.p`
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  line-height: 1rem;
+`;

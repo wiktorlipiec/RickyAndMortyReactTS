@@ -14,10 +14,11 @@ export const PaginationWrapper = styled.div`
       margin: 0 5px;
 
       a {
-        padding: 8px 12px;
+        padding: 0.8rem 1.2rem;
         border-radius: 5px;
-        border: 1px solid #ddd;
-        color: #007bff;
+        border: 1px solid ${({ theme }) => theme.colors.primary};
+        font-size: ${({ theme }) => theme.fontSizes.medium};
+        color: ${({ theme }) => theme.colors.primary};
         cursor: pointer;
         text-decoration: none;
         background-color: white;
@@ -25,14 +26,12 @@ export const PaginationWrapper = styled.div`
         transition: 0.4s;
 
         &:hover {
-          background-color: #007bff;
-          color: white;
+          background-color: ${({ theme }) => theme.colors.secondary};
         }
       }
 
       &.selected a {
-        background-color: #007bff;
-        color: white;
+        background-color: ${({ theme }) => theme.colors.secondary};
       }
 
       &.disabled a {

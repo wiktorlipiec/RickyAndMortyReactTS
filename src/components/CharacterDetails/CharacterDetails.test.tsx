@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../tests/setup';
 import { CharacterDetails } from './CharacterDetails';
 import { characterDetailsMock } from '../../mocks/character';
 

@@ -3,22 +3,20 @@ import { Link } from 'react-router-dom';
 
 export const StyledLinkButton = styled(Link)`
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 1rem 2rem;
   text-decoration: none;
-  color: #007bff;
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  color: ${({ theme }) => theme.colors.primary};
   background-color: white;
-  border-radius: 5px;
   text-align: center;
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #007bff;
-    color: white;
+    background-color: ${({ theme }) => theme.colors.secondary};
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
   }
 `;
