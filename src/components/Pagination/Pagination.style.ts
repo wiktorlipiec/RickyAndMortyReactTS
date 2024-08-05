@@ -11,10 +11,14 @@ export const PaginationWrapper = styled.div`
     display: flex;
 
     li {
-      margin: 0 5px;
+      margin: 0 2px;
+
+      @media (min-width: 600px) {
+        margin: 0 5px;
+      }
 
       a {
-        padding: 0.8rem 1.2rem;
+        padding: 0.8rem;
         border-radius: 5px;
         border: 1px solid ${({ theme }) => theme.colors.primary};
         font-size: ${({ theme }) => theme.fontSizes.medium};
@@ -27,6 +31,10 @@ export const PaginationWrapper = styled.div`
 
         &:hover {
           background-color: ${({ theme }) => theme.colors.secondary};
+        }
+
+        @media (min-width: 600px) {
+          padding: 0.8rem 1.2rem;
         }
       }
 
